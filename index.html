@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Projet Cloudinary - Galerie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>Mon Projet Web avec Cloudinary</h1>
+            <p>Découverte du Cloud Computing et de l'hébergement d'images.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="gallery-container" aria-label="Galerie d'images Cloudinary">
+            <div class="carousel" role="region" aria-roledescription="carrousel" aria-label="Galerie Cloudinary">
+                <div class="carousel-viewport">
+                    <div class="carousel-track">
+                        <article class="card is-active" role="group" aria-roledescription="diapositive" aria-label="1 sur 3">
+                            <img src="https://res.cloudinary.com/xgxu3pni/image/upload/v1794208936/images.jpg" alt="Première image Cloudinary">
+                            <div class="card-content">
+                                <span class="card-number">01 / 03</span>
+                                <h2>Image 1 : Illustration Cloud</h2>
+                                <p>Première image hébergée et diffusée depuis la plateforme Cloudinary.</p>
+                            </div>
+                        </article>
+
+                        <article class="card" role="group" aria-roledescription="diapositive" aria-label="2 sur 3" aria-hidden="true">
+                            <img src="https://res.cloudinary.com/xgxu3pni/image/upload/v1794208905/t%C3%A9l%C3%A9chargement_2.jpg" alt="Deuxième image Cloudinary">
+                            <div class="card-content">
+                                <span class="card-number">02 / 03</span>
+                                <h2>Image 2 : Aperçu du projet</h2>
+                                <p>Deuxième ressource graphique affichée dynamiquement via son URL sécurisée.</p>
+                            </div>
+                        </article>
+
+                        <article class="card" role="group" aria-roledescription="diapositive" aria-label="3 sur 3" aria-hidden="true">
+                            <img src="https://res.cloudinary.com/xgxu3pni/image/upload/v1794208788/t%C3%A9l%C3%A9chargement_6.jpg" alt="Troisième image Cloudinary">
+                            <div class="card-content">
+                                <span class="card-number">03 / 03</span>
+                                <h2>Image 3 : Élément visuel</h2>
+                                <p>Troisième image illustrant l'intégration réussie des services cloud dans un site web.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="carousel-controls">
+                    <button class="carousel-arrow" type="button" data-direction="-1" aria-label="Diapositive précédente">←</button>
+                    <div class="carousel-dots" aria-label="Choisir une diapositive">
+                        <button class="carousel-dot is-active" type="button" aria-label="Afficher la diapositive 1" aria-current="true"></button>
+                        <button class="carousel-dot" type="button" aria-label="Afficher la diapositive 2"></button>
+                        <button class="carousel-dot" type="button" aria-label="Afficher la diapositive 3"></button>
+                    </div>
+                    <button class="carousel-arrow" type="button" data-direction="1" aria-label="Diapositive suivante">→</button>
+                    <button class="carousel-play" type="button" aria-label="Mettre le défilement en pause" aria-pressed="false">Pause</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Réalisé dans le cadre du cours de Cloud Computing - UAC</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
