@@ -278,10 +278,23 @@ body {
 
     .gallery-container {
         width: min(92%, 560px);
-        margin-top: 1.5rem;
+        margin: 1.5rem auto;
+    }
+
+    .card img {
+        height: clamp(180px, 62vw, 300px);
+    }
+
+    .card-content {
+        padding: 1rem;
+    }
+
+    .card-content h2 {
+        font-size: clamp(1.05rem, 4vw, 1.2rem);
     }
 
     .carousel-controls {
+        flex-wrap: wrap;
         gap: 0.65rem;
     }
 }
